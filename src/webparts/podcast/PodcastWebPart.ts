@@ -9,12 +9,13 @@ import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 import { IReadonlyTheme } from '@microsoft/sp-component-base';
 
 import * as strings from 'PodcastWebPartStrings';
-import Podcast from './components/Podcast';
+import { Podcast } from './components/Podcast';
 import { IPodcastProps } from './components/IPodcastProps';
 
 export interface IPodcastWebPartProps {
   rssFeed: string;
   count: number;
+  quickFilter: string;
 }
 
 export default class PodcastWebPart extends BaseClientSideWebPart<IPodcastWebPartProps> {
@@ -27,7 +28,8 @@ export default class PodcastWebPart extends BaseClientSideWebPart<IPodcastWebPar
       Podcast,
       {
         rssFeed: this.properties.rssFeed,
-        count: this.properties.count
+        count: this.properties.count,
+        quickFilter: this.properties.quickFilter
       }
     );
 

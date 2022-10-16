@@ -3,4 +3,5 @@ export interface IPodcastGridProps {
     height: string;
     width: string;
     count: number;
+    quickFilter: string;
   }
