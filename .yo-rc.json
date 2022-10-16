@@ -1,0 +1,16 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.15.2",
+    "libraryName": "podcast",
+    "libraryId": "89380c43-c515-48d8-9fc4-915612e61e44",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "Podcast",
+    "solutionShortDescription": "Podcast description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
